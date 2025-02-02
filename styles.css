@@ -1,0 +1,112 @@
+/* Modern color palette and variables */
+:root {
+  --primary: #FF4F5A;
+  --primary-dark: #E63946;
+  --secondary: #2EC4B6;
+  --background: #F1FAEE;
+  --surface: #FFFFFF;
+  --text: #1D3557;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.container {
+  text-align: center;
+  background-color: var(--surface);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--shadow);
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.timer {
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -2px;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.controls button {
+  font-size: 1rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+#start {
+  background-color: var(--primary);
+  color: white;
+}
+
+#start:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+#pause, #reset {
+  background-color: #F8F9FA;
+  color: var(--text);
+}
+
+#pause:hover, #reset:hover {
+  background-color: #E9ECEF;
+  transform: translateY(-2px);
+}
+
+.mode-switches {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.mode-switches button {
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #F8F9FA;
+  color: var(--text);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.mode-switches button:hover {
+  background-color: #E9ECEF;
+}
+
+.mode-switches button.active {
+  background-color: var(--secondary);
+  color: white;
+} 
